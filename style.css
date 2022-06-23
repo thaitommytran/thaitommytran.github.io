@@ -2,8 +2,62 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-body {
-    background-color: #CAF0F8;
+header {
+  display: flex;
+  justify-content: center;
+  font-size: 4vw;
+  color: white;
+  background-color: #05668d;
+}
+
+#about {
+  color: white;
+  background-color: #05668d;
+}
+
+#about-container {
+  color: white;
+  background-color: #05668d;
+}
+
+#skills {
+  color: white;
+  background-color: #028090;
+}
+
+#skills-container {
+  color: white;
+  background-color: #028090;
+}
+
+#projects {
+  color: white;
+  background-color: #00a896;
+}
+
+#projects-container {
+  color: white;
+  background-color: #00a896;
+}
+
+#contacts {
+  color: white;
+  background-color: #02c39a;
+}
+
+#contacts-container {
+  color: white;
+  background-color: #02c39a;
+}
+
+img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+footer {
+  background-color: #f0f3bd;
 }
