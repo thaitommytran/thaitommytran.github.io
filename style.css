@@ -73,7 +73,7 @@ div {
   background-color: #02c39a;
 }
 
-#contacts-container > img {
+a > img {
   max-width: 150px;
   max-height: 150px;
 }
