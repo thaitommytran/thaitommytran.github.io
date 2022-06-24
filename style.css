@@ -11,6 +11,15 @@ header {
   font-size: 4vw;
   color: white;
   background-color: #05668d;
+  padding: 5vw;
+}
+
+h2 {
+  padding: 25px 50px;
+}
+
+div {
+  padding: 0 100px 50px;
 }
 
 #about {
@@ -21,6 +30,12 @@ header {
 #about-container {
   color: white;
   background-color: #05668d;
+  display: flex;
+}
+
+#profile-pic {
+  width: 30vw;
+  padding: 25px;
 }
 
 #skills {
@@ -31,6 +46,11 @@ header {
 #skills-container {
   color: white;
   background-color: #028090;
+}
+
+#skills-container > img {
+  max-width: 150px;
+  max-height: 150px;
 }
 
 #projects {
@@ -53,7 +73,7 @@ header {
   background-color: #02c39a;
 }
 
-img {
+#contacts-container > img {
   max-width: 150px;
   max-height: 150px;
 }
