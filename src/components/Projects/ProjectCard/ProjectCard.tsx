@@ -1,5 +1,6 @@
-"use client"
+"use client";
 import React, { useState } from "react";
+import Image from "next/image";
 
 const ProjectCard = ({ name, images, features, description }) => {
   const [currentImage, setCurrentImage] = useState(images[0]);
