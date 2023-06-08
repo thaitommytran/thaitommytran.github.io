@@ -3,9 +3,9 @@ import {
   AiOutlineSend,
   AiOutlineLinkedin,
   AiOutlineGithub,
-  AiOutlineMail
+  AiOutlineMail,
 } from "react-icons/ai";
-import Blob from "./Blob";
+import Blob from "@/components/Blob";
 
 const Me = () => {
   return (

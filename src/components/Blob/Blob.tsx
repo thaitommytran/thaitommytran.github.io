@@ -1,5 +1,4 @@
 import React from "react";
-import headshot from "../img/headshot.png";
 
 const Blob = () => {
   return (
