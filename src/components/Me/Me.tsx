@@ -15,7 +15,8 @@ const Me = () => {
         <h1 className="text-4xl font-semibold mb-10">
           Hi,
           <br />
-          I'm <span className="text-rose-500 whitespace-nowrap">Thai Tran</span>
+          I&apos;m{" "}
+          <span className="text-rose-500 whitespace-nowrap">Thai Tran</span>
           <br />
           <span className="whitespace-nowrap">Web Developer</span>
         </h1>
@@ -25,7 +26,8 @@ const Me = () => {
         {/* Contact Button */}
         <a
           className="bg-rose-500 inline-block text-white py-3 px-10 rounded-md"
-          href="mailto:thai.tommy.tran@gmail.com">
+          href="mailto:thai.tommy.tran@gmail.com"
+        >
           Contact
           <AiOutlineSend className="inline ml-2 text-xl" />
         </a>
@@ -35,13 +37,15 @@ const Me = () => {
           <a
             href="https://www.linkedin.com/in/thaitommytran/"
             target="_blank"
-            rel="noreferrer">
+            rel="noreferrer"
+          >
             <AiOutlineLinkedin />
           </a>
           <a
             href="https://github.com/thaitommytran"
             target="_blank"
-            rel="noreferrer">
+            rel="noreferrer"
+          >
             <AiOutlineGithub />
           </a>
           <a href="mailto:thai.tommy.tran@gmail.com">
