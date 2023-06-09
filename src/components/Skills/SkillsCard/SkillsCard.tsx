@@ -1,7 +1,11 @@
 import React from "react";
 import Image from "next/image";
+interface ISkillCard {
+  name: string;
+  image: string
+}
 
-const SkillCard = ({ name, image }) => {
+const SkillCard = ({ name, image }: ISkillCard) => {
   return (
     <div className="flex w-[240px] p-2 gap-2 border shadow rounded-md">
       <Image className="w-8" width="80" height="10" src={image} alt={name} />
