@@ -1,8 +1,14 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+interface IProjectCard {
+  description: string;
+  features: string[];
+  images: StaticImageData[];
+  name: string;
+}
 
-const ProjectCard = ({ name, images, features, description }) => {
+const ProjectCard = ({ name, images, features, description }: IProjectCard) => {
   const [currentImage, setCurrentImage] = useState(images[0]);
   const splitFeatures = features.join(" | ");
 
