@@ -1,6 +1,20 @@
+"use client";
 import React from "react";
 
 const Header = () => {
+  const handleScroll = (e) => {
+    e.preventDefault();
+
+    const target = e.currentTarget.innerText;
+    const elem = document.getElementById(target);
+    console.log(elem?.getBoundingClientRect())
+
+    window.scrollTo({
+      top: elem?.offsetTop,
+      behavior: "smooth"
+    });
+  };
+
   return (
     <header className="w-full fixed top-0 left-0 z-20 shadow bg-white">
       <nav className="h-[4.5rem] flex justify-between items-center font-semibold max-w-screen-md mx-auto">
@@ -13,16 +27,16 @@ const Header = () => {
         <div>
           <ul className="flex gap-8">
             <li>
-              <a href="#home">Home</a>
+              <span onClick={handleScroll}>Home</span>
             </li>
             <li>
-              <a href="#about">About</a>
+              <span onClick={handleScroll}>About</span>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <span onClick={handleScroll}>Skills</span>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <span onClick={handleScroll}>Projects</span>
             </li>
           </ul>
         </div>

@@ -3,7 +3,7 @@ import { AiOutlineDownload } from "react-icons/ai";
 
 const About = () => {
   return (
-    <section className="flex flex-col items-center pt-[8rem] w-full">
+    <section id="About" className="flex flex-col items-center pt-[8rem] w-full">
       {/* About Header */}
       <h2 className="text-2xl font-semibold text-rose-500 border-b-2 border-b-rose-500">
         About

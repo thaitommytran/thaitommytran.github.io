@@ -9,7 +9,7 @@ import Blob from "@/components/Blob";
 
 const Me = () => {
   return (
-    <section className="grid grid-cols-2 mt-[8rem] relative w-full">
+    <section id="Home" className="grid grid-cols-2 mt-[8rem] relative w-full">
       <div className="pt-4 col-span-full md:col-span-1">
         {/* Title Text */}
         <h1 className="text-4xl font-semibold mb-10">
