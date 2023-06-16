@@ -20,7 +20,7 @@ const Header = () => {
       <nav className="h-[4.5rem] flex justify-between items-center font-semibold max-w-screen-md mx-auto">
         {/* Header Name */}
         <div>
-          <a href="#home">Thai Tran</a>
+          <a href="/">Thai Tran</a>
         </div>
 
         {/* Nav Menu */}

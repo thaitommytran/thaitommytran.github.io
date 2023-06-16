@@ -9,10 +9,10 @@ import Blob from "@/components/Blob";
 
 const Me = () => {
   return (
-    <section id="Home" className="grid grid-cols-2 mt-[8rem] relative w-full">
+    <section id="Home" className="grid grid-cols-2 pt-[8rem] relative w-full h-screen 2xl:px-[18rem] xl:px-[12rem] md:px-[4rem] min-[1130px]:px-[8rem] min-[1780px]:px-[24rem]">
       <div className="pt-4 col-span-full md:col-span-1">
         {/* Title Text */}
-        <h1 className="text-4xl font-semibold mb-10">
+        <h1 className="font-semibold mb-10 2xl:text-6xl xl:text-5xl lg:text-5xl md:text-5xl">
           Hi,
           <br />
           I&apos;m{" "}
