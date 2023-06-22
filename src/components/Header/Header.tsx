@@ -2,10 +2,10 @@
 import React from "react";
 
 const Header = () => {
-  const handleScroll = (e) => {
-    e.preventDefault();
+  const handleScroll = (event: React.MouseEvent<HTMLElement>) => {
+    event.preventDefault();
 
-    const target = e.currentTarget.innerText;
+    const target = event.currentTarget.innerText;
     const elem = document.getElementById(target);
     console.log(elem?.getBoundingClientRect())
 
