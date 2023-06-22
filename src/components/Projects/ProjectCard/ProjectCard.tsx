@@ -13,12 +13,12 @@ const ProjectCard = ({ name, images, features, description }: IProjectCard) => {
   const splitFeatures = features.join(" | ");
 
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg">
+    <div className="max-w-sm overflow-hidden rounded shadow-lg">
       <Image className="w-full" src={currentImage} alt={name} />
       <div className="px-6 py-4">
-        <h2 className="font-bold text-xl text-rose-500">{name}</h2>
-        <h3 className="text-xs mb-2 text-slate-500">{splitFeatures}</h3>
-        <p className="text-slate-700 text-base">{description}</p>
+        <h2 className="text-xl font-bold text-rose-500">{name}</h2>
+        <h3 className="mb-2 text-xs text-slate-500">{splitFeatures}</h3>
+        <p className="text-base text-slate-700">{description}</p>
       </div>
     </div>
   );

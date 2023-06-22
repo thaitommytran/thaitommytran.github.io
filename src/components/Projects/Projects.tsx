@@ -4,9 +4,9 @@ import { projectList } from "../../shared/constants";
 
 const Projects = () => {
   return (
-    <section className="flex flex-col items-center pt-[4rem] w-full">
+    <section className="flex w-full flex-col items-center pt-[4rem]">
       {/* Projects Header */}
-      <h2 className="text-2xl font-semibold text-rose-500 border-b-2 border-b-rose-500">
+      <h2 className="border-b-2 border-b-rose-500 text-2xl font-semibold text-rose-500">
         Projects
       </h2>
 
