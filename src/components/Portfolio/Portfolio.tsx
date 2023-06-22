@@ -12,7 +12,7 @@ const Portfolio = () => {
   return (
     <>
       <Header />
-      <div className="flex flex-col px-6 lg:px-12 w-full">
+      <div className="flex w-full flex-col px-6 lg:px-12">
         <Me />
         <About />
         <Skills />

@@ -16,15 +16,18 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full fixed top-0 left-0 z-20 shadow bg-white">
-      <nav className="h-[4.5rem] flex justify-between items-center font-semibold max-w-screen-md mx-auto">
+    <header
+      data-testid="headerTestId"
+      className="fixed left-0 top-0 z-20 w-full bg-white shadow"
+    >
+      <nav className="mx-auto flex h-[4.5rem] max-w-screen-md items-center justify-between font-semibold">
         {/* Header Name */}
         <div>
           <a href="/">Thai Tran</a>
         </div>
 
         {/* Nav Menu */}
-        <div>
+        <div data-testid="navMenuTestId">
           <ul className="flex gap-8">
             <li>
               <span onClick={handleScroll}>Home</span>

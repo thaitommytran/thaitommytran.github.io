@@ -2,7 +2,7 @@ import React from "react";
 
 const Blob = () => {
   return (
-    <div className="w-[80px] md:w-[320px] justify-self-end md:row-span-full col-start-2">
+    <div className="col-start-2 w-[80px] justify-self-end md:row-span-full md:w-[320px]">
       <svg
         className="fill-rose-400"
         viewBox="0 0 200 187"
