@@ -7,11 +7,10 @@ const Header = () => {
 
     const target = event.currentTarget.innerText;
     const elem = document.getElementById(target);
-    console.log(elem?.getBoundingClientRect())
 
     window.scrollTo({
       top: elem?.offsetTop,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
@@ -30,16 +29,24 @@ const Header = () => {
         <div data-testid="navMenuTestId">
           <ul className="flex gap-8">
             <li>
-              <span onClick={handleScroll}>Home</span>
+              <span data-testid="homeNavTestId" onClick={handleScroll}>
+                Home
+              </span>
             </li>
             <li>
-              <span onClick={handleScroll}>About</span>
+              <span data-testid="aboutNavTestId" onClick={handleScroll}>
+                About
+              </span>
             </li>
             <li>
-              <span onClick={handleScroll}>Skills</span>
+              <span data-testid="skillsNavTestId" onClick={handleScroll}>
+                Skills
+              </span>
             </li>
             <li>
-              <span onClick={handleScroll}>Projects</span>
+              <span data-testid="projectsNavTestId" onClick={handleScroll}>
+                Projects
+              </span>
             </li>
           </ul>
         </div>
