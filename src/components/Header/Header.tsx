@@ -1,31 +1,55 @@
+"use client";
 import React from "react";
 
 const Header = () => {
+  const handleScroll = (event: React.MouseEvent<HTMLElement>) => {
+    event.preventDefault();
+
+    const target = event.currentTarget.innerText;
+    const elem = document.getElementById(target);
+
+    window.scrollTo({
+      top: elem?.offsetTop,
+      behavior: "smooth"
+    });
+  };
+
   return (
     <header
       data-testid="headerTestId"
-      className="fixed left-0 top-0 z-20 w-full bg-white shadow"
-    >
+      className="fixed left-0 top-0 z-20 w-full bg-white shadow">
       <nav className="mx-auto flex h-[4.5rem] max-w-screen-md items-center justify-between font-semibold">
         {/* Header Name */}
         <div>
-          <a href="#home">Thai Tran</a>
+          <a
+            className="decoration-rose-500 decoration-2 hover:underline"
+            href="/">
+            Thai Tran
+          </a>
         </div>
 
         {/* Nav Menu */}
         <div data-testid="navMenuTestId">
           <ul className="flex gap-8">
-            <li>
-              <a href="#home">Home</a>
+            <li className="cursor-pointer decoration-rose-500 decoration-2 hover:underline">
+              <span data-testid="homeNavTestId" onClick={handleScroll}>
+                Home
+              </span>
             </li>
-            <li>
-              <a href="#about">About</a>
+            <li className="cursor-pointer decoration-rose-500 decoration-2 hover:underline">
+              <span data-testid="aboutNavTestId" onClick={handleScroll}>
+                About
+              </span>
             </li>
-            <li>
-              <a href="#skills">Skills</a>
+            <li className="cursor-pointer decoration-rose-500 decoration-2 hover:underline">
+              <span data-testid="skillsNavTestId" onClick={handleScroll}>
+                Skills
+              </span>
             </li>
-            <li>
-              <a href="#projects">Projects</a>
+            <li className="cursor-pointer decoration-rose-500 decoration-2 hover:underline">
+              <span data-testid="projectsNavTestId" onClick={handleScroll}>
+                Projects
+              </span>
             </li>
           </ul>
         </div>

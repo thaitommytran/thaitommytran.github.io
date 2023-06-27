@@ -4,7 +4,10 @@ import { projectList } from "../../shared/constants";
 
 const Projects = () => {
   return (
-    <section className="flex w-full flex-col items-center pt-[4rem]">
+    <section
+      id="Projects"
+      className="flex w-full flex-col items-center pt-[8rem]"
+    >
       {/* Projects Header */}
       <h2 className="border-b-2 border-b-rose-500 text-2xl font-semibold text-rose-500">
         Projects
