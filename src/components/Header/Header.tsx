@@ -21,7 +21,11 @@ const Header = () => {
       <nav className="mx-auto flex h-[4.5rem] max-w-screen-md items-center justify-between font-semibold">
         {/* Header Name */}
         <div>
-          <a href="/">Thai Tran</a>
+          <a
+            className="decoration-rose-500 decoration-2 hover:underline"
+            href="/">
+            Thai Tran
+          </a>
         </div>
 
         {/* Nav Menu */}
