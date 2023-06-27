@@ -10,7 +10,7 @@ const About = () => {
       </h2>
 
       {/* About Content */}
-      <div className="flex flex-col items-center gap-6 py-8">
+      <div className="flex flex-col items-center gap-6 py-8 md:px-[4rem] min-[1130px]:px-[8rem] xl:px-[12rem] 2xl:px-[18rem] min-[1780px]:px-[24rem]">
         <p>
           {`          Hey y'all! I am a Web Developer based in the Dallas-Fort Worth
           metroplex. I have hands-on experience building full-stack web
