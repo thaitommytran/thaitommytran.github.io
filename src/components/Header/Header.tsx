@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 
 const Header = () => {
   const handleScroll = (event: React.MouseEvent<HTMLElement>) => {
@@ -50,6 +51,11 @@ const Header = () => {
               <span data-testid="projectsNavTestId" onClick={handleScroll}>
                 Projects
               </span>
+            </li>
+            <li className="cursor-pointer decoration-rose-500 decoration-2 hover:underline">
+              <Link data-testid="projectsNavTestId" href="/components">
+                Components
+              </Link>
             </li>
           </ul>
         </div>
