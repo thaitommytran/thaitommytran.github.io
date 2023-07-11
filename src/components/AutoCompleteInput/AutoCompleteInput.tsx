@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
+import Spinner from "@/components/Spinner";
 
 const AutoCompleteInput = () => {
   const [input, setInput] = useState("");
@@ -39,7 +40,11 @@ const AutoCompleteInput = () => {
       </button>
       {input && (
         <div className="h-48 w-full">
-          {isLoading && <div>Loading...</div>}
+          {isLoading && (
+            <div className="flex h-full w-full items-center justify-center">
+              <Spinner className="h-12 w-12" />
+            </div>
+          )}
           {isError && <div>Request failed</div>}
           {isSuccess && (
             <div className="h-full overflow-y-scroll">

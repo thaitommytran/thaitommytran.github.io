@@ -7,12 +7,12 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#163a74] text-white text-4xl flex flex-col items-center py-16 mt-[6rem]">
+    <footer className="mt-[6rem] flex flex-col items-center bg-[#163a74] py-16 text-4xl text-white">
       {/* Footer Name */}
       <h1 className="font-semibold">Thai Tran</h1>
 
       {/* Social Icons */}
-      <div className="flex gap-4 mt-3 text-2xl">
+      <div className="mt-3 flex gap-4 text-2xl">
         <a
           href="https://www.linkedin.com/in/thaitommytran/"
           target="_blank"
