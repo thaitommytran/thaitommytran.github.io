@@ -2,14 +2,14 @@ import React from "react";
 import Image from "next/image";
 interface ISkillCard {
   name: string;
-  image: string
+  image: string;
 }
 
 const SkillCard = ({ name, image }: ISkillCard) => {
   return (
-    <div className="flex w-[240px] p-2 gap-2 border shadow rounded-md">
+    <div className="flex w-[240px] gap-2 rounded-md border p-2 shadow">
       <Image className="w-8" width="80" height="10" src={image} alt={name} />
-      <p className="font-semibold pt-1">{name}</p>
+      <p className="pt-1 font-semibold">{name}</p>
     </div>
   );
 };

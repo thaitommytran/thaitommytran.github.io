@@ -4,9 +4,11 @@ import { skillList } from "../../shared/constants";
 
 const Skills = () => {
   return (
-    <section id="Skills" className="flex flex-col items-center pt-[8rem] w-full">
+    <section
+      id="Skills"
+      className="flex w-full flex-col items-center pt-[8rem]">
       {/* Skills Header */}
-      <h2 className="text-2xl font-semibold text-rose-500 border-b-2 border-b-rose-500">
+      <h2 className="border-b-2 border-b-rose-500 text-2xl font-semibold text-rose-500">
         Skills
       </h2>
 
